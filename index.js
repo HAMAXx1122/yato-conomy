@@ -1,4 +1,4 @@
-const TOKEN = ""
+const TOKEN = "ODczOTg5Mzg4MzAyOTQ2MzQ0.G0BSKN.2twKI86OSb7U4W0fiqvwMVuFTDAa1kkD4LGxqY"
 const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]
@@ -22,7 +22,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
   client.user.setPresence({
-    activities: [{ name: `${prefix}help | Yato Bot Version 13` }],
+    activities: [{ name: `${prefix}help | Minus Bot Version 13` }],
     status: "dnd"
   });
   console.log(`Logined`);
