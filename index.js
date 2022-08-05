@@ -38,7 +38,7 @@ client.on("messageCreate", message => {
   if (message.author.bot) return;
   if (!p[message.guild.id])
     p[message.guild.id] = {
-      prefix: "b!"
+      prefix: "-"
     };
   const prefix = p[message.guild.id].prefix;
   if (message.content.startsWith(prefix + "setprefix")) {
@@ -91,7 +91,7 @@ Blacklist: "OFF"
 client.on("messageCreate", async message => {
   if (!p[message.guild.id])
     p[message.guild.id] = {
-      prefix: "b!"
+      prefix: "-"
     };
   const prefix = p[message.guild.id].prefix; 
   if (message.content.startsWith(prefix + "help")) {
@@ -127,7 +127,7 @@ timeAfk,hAfk,setAfk,ban,kick\`
 client.on('messageCreate', message => {
   if (!p[message.guild.id])
     p[message.guild.id] = {
-      prefix: "b!"
+      prefix: "-"
     };
   const prefix = p[message.guild.id].prefix 
   if(message.content.startsWith(prefix + `invite`)){
@@ -150,7 +150,7 @@ Blacklist: "OFF"
 client.on("messageCreate", message => {
   if (!p[message.guild.id])
     p[message.guild.id] = {
-      prefix: "b!"
+      prefix: "-"
     };
   const prefix = p[message.guild.id].prefix;
     if (message.content.startsWith(prefix + "botinfo")) {
